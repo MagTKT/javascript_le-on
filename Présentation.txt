@@ -1,0 +1,26 @@
+Présentation carte de location de vélo =
+
+Ayant été mandaté pour créer un site de location de vélo avec reservation je vais vous présenter mon projet:
+
+
+Vu rapide sur le site avec presentation responsive . Puis indiquer que tout est travailler en mode objet
+
+
+slider = 
+
+map =
+
+resa = 
+
+canvas = 
+
+controller =
+
+nav = pour le menu hamburguer
+
+les amelorattions en cour == 
+
+on pourrai amelioré session storage pour qu'a chaque reservation l'utilisateur quand il quitte la fenetre n'est pas perdu sa reservation.
+
+il faudrais aussi voir pour faire en sorte que quand l'utilisateur reserve un velo cela decremente la station afin que l'on sache ou l'on en est.
+

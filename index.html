@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8"> 
+   <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Location de Vélo</title>
+</head>
+<body>
+<!--navigation-->
+<nav id='navigation'>
+  <a id="titre" href="#!">Renting Bike</a></a>
+  <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons" id="hamburger">menu</i></a>
+  <ul class="right hide-on-med-and-down">
+    <li><a href="#slideshow-container">Accueil</a></li>
+    <li><a href="#map">Réservation</a></li>
+    <li><a href="#reservation">Contact</a></li>
+  </ul>
+  <!--navigation pour version mobile et tablet avec menu reduit type "hamburger"-->
+  <ul class="side-nav" id="mobile-demo">
+    <li><a href="#slideshow-container">Accueil</a></li>
+    <li><a href="#map">Comment ça marche ?</a></li>
+    <li><a href="#reservation">Contact</a></li>
+  </ul>  
+</nav>
+  
+<!--slider-->
+<header>
+  <div id="slideshow-container">
+    <div class="mySlides">
+      <img src="img/slide_1.png" alt="">
+    </div>
+    <div class="mySlides">
+      <img src="img/slide_2.png" alt="">
+    </div>
+    <div class="mySlides">
+      <img src="img/slide_3.png" alt="">
+    </div>
+     </div> 
+</header>
+<main>
+   <div class="arrow">
+        <i id="prev" class="medium material-icons">chevron_left</i>
+        <i id="next" class="medium material-icons">chevron_right</i>
+    </div>
+  </main>
+
+<!--maps-->
+<div class="row" id="info">
+  <h1 class="col s12 m12 l12 z-depth-5">Séléctionner une station<span id="nom"></span></h1>
+    <div id='map_container' class='col s12 m12 l12'><!--contient ma maps-->
+      
+      
+    <div id="map" class='col s12 m12 l6 offset-l1'></div><!--la maps-->
+
+
+
+      <div id="reservation_container" class='col s12 m12 l5'>
+      <!-- les info des stations vélo-->
+        <span id="instruction">Cliquez sur la map pour faire une réservation</span>
+        <div id="bloc_complet">  
+          <h2 style="margin-top: 0px;">Réservation</h2>
+          <p>Etat de la station : <span id="etat"></span></p>
+          <p>Station : <span id="lieux"></span></p>
+          <p>Adresse : <span id="adresse"></span></p>
+          <p>Vélos disponibles : <span id="dispo_velo">0</span></p>
+          <p>Place de vélos disponibles : <span id="place_velo">0</span></p>
+        <!--canvas affichage-->
+          <div class="col s12 m12 l12" id="bloc_canvas">
+            <p class="text-center" id="signer">Signer dans le cadre pour réserver un vélo</p>
+            <canvas id="canvas"></canvas>
+            <canvas id="blank"></canvas>
+            <button id="effacer" class="waves-effect waves btn">Effacer</button>
+            <button id="valider" class="waves-effect waves-light btn">Valider</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<!--canvas-->
+
+<!--footer-->
+<footer class="page-footer card-panel grey darken-4">
+  <div class="col s12 m 12 l12 card-panel grey darken-3" id="reservation">    
+  <h4 id="message">Vous n'avez pas réservé de vélo</h4><span id="compteur"></span>
+  </div>
+    <div class="container">
+      <div class="row ">
+        <div class="col s12 m12 l12">
+          <h3 class="white-text">Contact</h3>
+          <p class="grey-text grey darken-4">Mon pti vélo<br> 4 rue du paradis 75006 <br>Paris 01.40.40.40.40</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+    <div class="container">© 2018 Copyright </div>
+</footer>
+  <!--Scripts-->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> 
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgu-cPLAxwyNywnrY9P3I7jAjHRMj3nhk"></script>
+  <script src="js/marker-clusterer.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/ajax.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/canvas.js"></script>
+  <script src="js/resa.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/controller.js"></script>  
+   
+  </body>
+</html>

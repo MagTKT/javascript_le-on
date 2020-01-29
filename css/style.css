@@ -1,0 +1,132 @@
+* {
+    font-family: 'roboto'; 
+    color: #a97419;
+}
+
+body {
+    background-color: #212121;
+}
+header{
+    background:url("../img/maquette_AR_Plan_site.jpg") center no-repeat;
+    background-size:cover;
+}
+h1{
+    text-align: center;
+    color:white;
+    background-color:#a97419;
+    margin-top: 0;
+    font-size: 3.2rem;
+}
+#navigation{
+    background-color:#a97419;
+}
+#logo{
+    margin-top: 20px;
+    margin-left: 10px;}
+
+#titre{
+    margin-left: 20px;
+    font-size: 40px;}
+
+/* GESTION DU SLIDER */
+
+#slideshow-container{
+    width: 100%;
+    text-align: center;   
+}
+.mySlides img{
+    width: 80%;
+}
+
+#prev {
+    cursor: pointer;
+}
+
+#prev:hover {
+    color: white;
+}
+
+#next {
+    cursor: pointer;
+}
+
+#next:hover {
+    color: white;
+}
+
+/*-------gestion Maps------*/
+
+#map {
+    height: 400px;
+}
+#reservation_container {
+    text-align: center;
+    height: 400px;
+    
+}
+/******reservation************/
+#bloc_complet{
+    display:none;
+}
+#instruction{
+    display:block;
+    font-size: 40px;
+    margin-top: 100px;
+}
+#compteur{
+    font-size: 25px;
+    color:white;
+}
+
+#canvas
+{
+    border: 1px solid rgb(255, 255, 255);
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+#blank{
+    display: none;
+}
+
+#bouton
+{
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 30%;
+}
+h2 {
+    color: #a97419;
+}
+p{
+    color: #a97419;
+}
+.btn{
+    background-color: #a97419;
+}
+.btn:hover{
+    background-color: #efa11b;
+}
+.btn:focus{
+    background-color: #efa11b;
+}
+footer{
+    text-align: center;
+}
+h4{
+    font-size: 25px !important;
+    color:white;
+}
+#reservation{
+    background-color: #a97419!important;
+}
+.container{
+    color:white;
+}
+a.button-collapse i {
+    color: white;
+}
+.arrow{
+    text-align: center;
+}
